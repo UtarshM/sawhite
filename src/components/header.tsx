@@ -2,15 +2,24 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { Logo } from './logo';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
-import { Menu } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/courses', label: 'Courses' },
-  { href: '/workshops', label: 'Workshops' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/contact', label: 'Contact' },
+const programLinks = [
+    { href: '/courses', label: 'Courses' },
+    { href: '/workshops', label: 'Workshops' },
+    { href: '/internships', label: 'Internships' },
 ];
 
 export function Header() {
@@ -32,11 +41,40 @@ export function Header() {
                       <Logo />
                     </div>
                     <nav className="flex flex-col gap-4 px-6">
-                      {navLinks.map((link) => (
-                        <Link key={link.href} href={link.href} className="text-lg font-medium text-foreground hover:text-primary">
-                          {link.label}
+                        <Link href="/" className="text-lg font-medium text-foreground hover:text-primary">
+                          Home
                         </Link>
-                      ))}
+                        
+                        <Accordion type="single" collapsible className="w-full">
+                            <AccordionItem value="programs" className="border-b-0">
+                            <AccordionTrigger className="p-0 text-lg font-medium text-foreground hover:text-primary hover:no-underline">
+                                Programs
+                            </AccordionTrigger>
+                            <AccordionContent className="pt-2 pl-4">
+                                <nav className="flex flex-col gap-2">
+                                {programLinks.map((link) => (
+                                    <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="text-base font-medium text-muted-foreground hover:text-primary"
+                                    >
+                                    {link.label}
+                                    </Link>
+                                ))}
+                                </nav>
+                            </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
+                      
+                        <Link href="/gallery" className="text-lg font-medium text-foreground hover:text-primary">
+                          Gallery
+                        </Link>
+                        <Link href="/faq" className="text-lg font-medium text-foreground hover:text-primary">
+                          FAQ
+                        </Link>
+                        <Link href="/contact" className="text-lg font-medium text-foreground hover:text-primary">
+                          Contact
+                        </Link>
                     </nav>
                      <div className="mt-auto p-6">
                       <Button asChild variant="highlight" className="w-full">
@@ -53,14 +91,36 @@ export function Header() {
         </div>
         
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium ml-auto">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary">
-              {link.label}
+            <Link href="/" className="transition-colors hover:text-primary">
+              Home
             </Link>
-          ))}
-          <Button asChild variant="highlight">
-            <Link href="/contact">Registration</Link>
-          </Button>
+            
+            <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 font-medium transition-colors hover:text-primary">
+                Programs <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                {programLinks.map((link) => (
+                    <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href}>{link.label}</Link>
+                    </DropdownMenuItem>
+                ))}
+                </DropdownMenuContent>
+            </DropdownMenu>
+
+            <Link href="/gallery" className="transition-colors hover:text-primary">
+              Gallery
+            </Link>
+            <Link href="/faq" className="transition-colors hover:text-primary">
+              FAQ
+            </Link>
+            <Link href="/contact" className="transition-colors hover:text-primary">
+              Contact
+            </Link>
+
+            <Button asChild variant="highlight">
+                <Link href="/contact">Registration</Link>
+            </Button>
         </nav>
       </div>
     </header>
