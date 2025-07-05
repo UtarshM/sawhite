@@ -35,7 +35,7 @@ export function Header() {
                     <span className="sr-only">Toggle Menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[300px] sm:w-[300px]">
+                <SheetContent side="left" className="p-0">
                   <div className="flex flex-col h-full">
                     <div className="p-6">
                       <Logo />

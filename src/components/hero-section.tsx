@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="container grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
         <div className="space-y-6 animate-in fade-in slide-in-from-left-8 duration-700">
           <span className="font-semibold text-primary uppercase tracking-wider">Unlock Your AI Potential</span>
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             The Future of Intelligence, <span className="text-primary">Mastered.</span>
           </h1>
           <p className="text-lg text-muted-foreground">

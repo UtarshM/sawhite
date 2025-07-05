@@ -35,7 +35,7 @@ export default function WorkshopsPage() {
     <div className="bg-secondary py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Hands-On AI Workshops</h1>
+          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold">Hands-On AI Workshops</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Our workshops are practical, project-based sessions designed to give you tangible skills in a short amount of time.
           </p>

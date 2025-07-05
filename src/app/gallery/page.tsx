@@ -10,7 +10,7 @@ export default function GalleryPage() {
   return (
     <div className="container py-20">
       <div className="text-center space-y-4 mb-12">
-        <h1 className="font-headline text-4xl md:text-5xl font-bold">Gallery</h1>
+        <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold">Gallery</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           A glimpse into the life at Scalezix.Academy.
         </p>

@@ -37,7 +37,7 @@ export default function InternshipsPage() {
     <div className="bg-secondary py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Internship Programs</h1>
+          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold">Internship Programs</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We offer a variety of programs to fit your learning pace and career aspirations. Every program includes mentorship, a certificate, and full project documentation.
           </p>

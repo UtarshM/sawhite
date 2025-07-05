@@ -36,7 +36,7 @@ export function TestimonialsSection() {
             Don't just take our word for it. Here's what our alumni have to say about their experience.
           </p>
         </div>
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-6 border-2">
               <CardContent className="p-0">

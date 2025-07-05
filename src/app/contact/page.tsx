@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Get in Touch</h1>
+          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold">Get in Touch</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Have questions? We'd love to hear from you. Fill out the form below or reach out to us through our contact details.
           </p>

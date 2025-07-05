@@ -34,7 +34,7 @@ export default function FaqPage() {
   return (
     <div className="container py-20">
       <div className="text-center space-y-4 mb-12">
-        <h1 className="font-headline text-4xl md:text-5xl font-bold">Frequently Asked Questions</h1>
+        <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold">Frequently Asked Questions</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Find answers to common questions about our academy and programs.
         </p>
