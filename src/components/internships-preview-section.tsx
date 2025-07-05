@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './ui/card';
 import { Button } from './ui/button';
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, BrainCircuit } from 'lucide-react';
 
-const programs = [
-  { duration: '15 Days' },
-  { duration: '30 Days' },
-  { duration: '3 Months' },
+const courses = [
+  { name: 'Intro to Machine Learning' },
+  { name: 'Advanced Deep Learning' },
+  { name: 'Natural Language Processing' },
 ];
 
 export function InternshipsPreviewSection() {
@@ -14,28 +14,28 @@ export function InternshipsPreviewSection() {
     <section className="py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Internship Programs</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Featured Courses</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the program that fits your schedule and career goals. All programs come with certificates and project documentation.
+            Get a glimpse of our most popular AI courses designed by industry experts.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {programs.map((program, index) => (
+          {courses.map((course, index) => (
             <Card key={index} className="flex flex-col">
               <CardHeader>
                 <CardTitle className="font-headline flex items-center gap-2">
-                  <Clock className="h-6 w-6 text-primary" />
-                  {program.duration} Program
+                  <BrainCircuit className="h-6 w-6 text-primary" />
+                  {course.name}
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <CardDescription>
-                  An intensive program focused on building a complete project from scratch. Includes certificate and documentation.
+                  A comprehensive course covering fundamentals and advanced topics. Includes hands-on projects and expert mentorship.
                 </CardDescription>
               </CardContent>
               <CardFooter>
                  <Button variant="link" asChild className="p-0 font-semibold">
-                  <Link href="/internships">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <Link href="/courses">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                  </Button>
               </CardFooter>
             </Card>
@@ -43,7 +43,7 @@ export function InternshipsPreviewSection() {
         </div>
         <div className="text-center mt-12">
           <Button size="lg" asChild>
-            <Link href="/internships">See All Programs <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            <Link href="/courses">See All Courses <ArrowRight className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
       </div>

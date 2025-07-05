@@ -17,7 +17,10 @@ export function Footer() {
             <h3 className="font-headline font-semibold text-foreground">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               <li><Link href="/" className="text-muted-foreground hover:text-primary">Home</Link></li>
-              <li><Link href="/internships" className="text-muted-foreground hover:text-primary">Internships</Link></li>
+              <li><Link href="/courses" className="text-muted-foreground hover:text-primary">Courses</Link></li>
+              <li><Link href="/workshops" className="text-muted-foreground hover:text-primary">Workshops</Link></li>
+              <li><Link href="/gallery" className="text-muted-foreground hover:text-primary">Gallery</Link></li>
+              <li><Link href="/faq" className="text-muted-foreground hover:text-primary">FAQ</Link></li>
               <li><Link href="/contact" className="text-muted-foreground hover:text-primary">Contact</Link></li>
             </ul>
           </div>
@@ -31,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} ScaleZix Academy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Scalezix.Academy. All rights reserved.</p>
         </div>
       </div>
     </footer>

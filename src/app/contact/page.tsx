@@ -3,8 +3,8 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | ScaleZix Academy',
-  description: 'Get in touch with ScaleZix Academy for any inquiries about our internship programs.',
+  title: 'Contact Us | Scalezix.Academy',
+  description: 'Get in touch with Scalezix.Academy for any inquiries about our internship programs.',
 };
 
 export default function ContactPage() {

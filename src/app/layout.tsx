@@ -5,8 +5,8 @@ import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ScaleZix Academy',
-  description: 'Internship programs for aspiring tech professionals.',
+  title: 'Scalezix.Academy',
+  description: 'The Future of Intelligence, Mastered.',
 };
 
 export default function RootLayout({
