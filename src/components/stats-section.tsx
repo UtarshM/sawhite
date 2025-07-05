@@ -13,7 +13,7 @@ const stats = [
   },
   {
     value: "100+",
-    label: "Certified by Neno Technology in Agentic AI and No-Code Automation.",
+    label: "Certified by Scalezix Academy in Agentic AI and Automation.",
   },
 ];
 
