@@ -38,6 +38,11 @@ export function Header() {
                         </Link>
                       ))}
                     </nav>
+                     <div className="mt-auto p-6">
+                      <Button asChild variant="highlight" className="w-full">
+                        <Link href="/contact">Registration</Link>
+                      </Button>
+                    </div>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -53,6 +58,9 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          <Button asChild variant="highlight">
+            <Link href="/contact">Registration</Link>
+          </Button>
         </nav>
       </div>
     </header>
