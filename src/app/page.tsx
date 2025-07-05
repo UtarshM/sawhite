@@ -5,12 +5,14 @@ import { WhyUsSection } from '@/components/why-us-section';
 import { InternshipsPreviewSection } from '@/components/internships-preview-section';
 import { TestimonialsSection } from '@/components/testimonials-section';
 import { CtaSection } from '@/components/cta-section';
+import { StatsSection } from '@/components/stats-section';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <PartnersSection />
+      <StatsSection />
       <FeaturesSection />
       <WhyUsSection />
       <InternshipsPreviewSection />

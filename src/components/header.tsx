@@ -38,11 +38,6 @@ export function Header() {
                         </Link>
                       ))}
                     </nav>
-                    <div className="mt-auto p-6">
-                      <Button asChild className="w-full">
-                        <Link href="/courses">Course Finder</Link>
-                      </Button>
-                    </div>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -52,19 +47,13 @@ export function Header() {
             </div>
         </div>
         
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium ml-auto">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="transition-colors hover:text-primary">
               {link.label}
             </Link>
           ))}
         </nav>
-
-        <div className="hidden md:flex items-center justify-end ml-4">
-          <Button asChild>
-            <Link href="/courses">Course Finder</Link>
-          </Button>
-        </div>
       </div>
     </header>
   );
