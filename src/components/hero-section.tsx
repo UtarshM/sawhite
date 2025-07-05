@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="bg-secondary">
       <div className="container grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
-        <div className="space-y-6">
+        <div className="space-y-6 animate-in fade-in slide-in-from-left-8 duration-700">
           <span className="font-semibold text-primary uppercase tracking-wider">Unlock Your AI Potential</span>
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             The Future of Intelligence, <span className="text-primary">Mastered.</span>
@@ -24,7 +24,7 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center animate-in fade-in slide-in-from-right-8 duration-700">
           <Image
             src="https://placehold.co/600x400.png"
             alt="Futuristic AI concept"

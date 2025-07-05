@@ -11,7 +11,7 @@ const partners = [
 export function PartnersSection() {
   return (
     <section className="py-16 bg-background">
-      <div className="container">
+      <div className="container animate-in fade-in duration-500 delay-300">
         <h2 className="text-center text-xl font-semibold text-muted-foreground mb-8">
           Partners with Industry Leaders
         </h2>

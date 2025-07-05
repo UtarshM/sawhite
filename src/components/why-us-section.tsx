@@ -12,7 +12,7 @@ export function WhyUsSection() {
   return (
     <section className="bg-secondary py-20">
       <div className="container grid md:grid-cols-2 gap-12 items-center">
-        <div className="flex justify-center">
+        <div className="flex justify-center animate-in fade-in slide-in-from-left-8 duration-700">
           <Image
             src="https://placehold.co/600x450.png"
             alt="Instructor teaching students"
@@ -22,7 +22,7 @@ export function WhyUsSection() {
             data-ai-hint="instructor teaching"
           />
         </div>
-        <div className="space-y-6">
+        <div className="space-y-6 animate-in fade-in slide-in-from-right-8 duration-700">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Why Choose ScaleZix Academy?</h2>
           <p className="text-lg text-muted-foreground">
             We bridge the gap between academic learning and industry demands, preparing you for a successful career in tech.
